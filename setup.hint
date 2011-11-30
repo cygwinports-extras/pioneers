@@ -1,0 +1,6 @@
+category: Games
+requires: libavahi-client3 libavahi-common3 libavahi-glib1 libcairo2 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgtk2.0_0 libintl8 libnotify4 libpango1.0_0
+sdesc: "The Settlers of Catan game with network support"
+ldesc: "Pioneers is an Internet playable implementation of the Settlers 
+of Catan board game.  The aim is to remain as faithful to the board game 
+as is possible."

@@ -1,0 +1,11 @@
+--- origsrc/pioneers-0.12.5/configure.ac	2011-10-18 13:55:08.000000000 -0500
++++ src/pioneers-0.12.5/configure.ac	2011-11-30 00:38:06.390877400 -0600
+@@ -352,8 +352,6 @@ AC_CHECK_FUNCS([getaddrinfo gai_strerror
+ # The Windows ports (Cygwin and MinGW) are client-only
+ pioneers_is_mingw_port=no;
+ case $host in
+-	*-*-cygwin*)
+-		pioneers_is_windows_port=yes;;
+ 	*-*-mingw*)
+ 		pioneers_is_windows_port=yes;
+ 		pioneers_is_mingw_port=yes;;
