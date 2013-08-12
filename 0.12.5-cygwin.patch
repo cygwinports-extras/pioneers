@@ -1,6 +1,21 @@
 --- origsrc/pioneers-0.12.5/configure.ac	2011-10-18 13:55:08.000000000 -0500
 +++ src/pioneers-0.12.5/configure.ac	2011-11-30 00:38:06.390877400 -0600
-@@ -352,8 +352,6 @@ AC_CHECK_FUNCS([getaddrinfo gai_strerror
+@@ -129,14 +129,6 @@ if test "x$GCC" = xyes; then
+ 	# Flags from Debian hardening (dpkg-buildflags --get CFLAGS)
+ 	AC_SUBST(AM_CFLAGS, ["$AM_CFLAGS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security"])
+ 	AC_SUBST(AM_CFLAGS, ["$AM_CFLAGS -D_FORTIFY_SOURCE=2"])
+-	AC_SUBST(AM_CFLAGS, ["$AM_CFLAGS -pie -fPIE"])
+-
+-	# Flags from Debian hardening (dpkg-buildflags --get LDFLAGS)
+-	AC_SUBST(AM_LDFLAGS, ["$AM_LDFLAGS -Wl,-z,relro"])
+-	AC_SUBST(AM_LDFLAGS, ["$AM_LDFLAGS -Wl,-z,now"])
+-
+-	# Only link the directly needed libraries	
+-	AC_SUBST(AM_CFLAGS, ["$AM_CFLAGS -Wl,--as-needed"])
+ 
+ 	if test "$pioneers_warnings" = yes -o "$pioneers_warnings" = full; then
+ 		AC_SUBST(WARNINGS, "-Wall")
+@@ -374,8 +366,6 @@ AC_CHECK_FUNCS([getaddrinfo gai_strerror
  # The Windows ports (Cygwin and MinGW) are client-only
  pioneers_is_mingw_port=no;
  case $host in

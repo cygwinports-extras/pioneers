@@ -1,0 +1,11 @@
+NAME="pioneers"
+VERSION=14.1
+RELEASE=1
+CATEGORY="Games"
+SUMMARY="The Settlers of Catan game with network support"
+DESCRIPTION="Pioneers is an Internet playable implementation of the Settlers
+of Catan board game.  The aim is to remain as faithful to the board game as
+is possible."
+HOMEPAGE="http://pio.sourceforge.net/"
+SRC_URI="mirror://sourceforge/pio/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.12.5-cygwin.patch"

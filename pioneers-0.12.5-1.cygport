@@ -1,4 +1,0 @@
-DESCRIPTION="The Settlers of Catan game with networking support"
-HOMEPAGE="http://pio.sourceforge.net/"
-SRC_URI="mirror://sourceforge/pio/${P}.tar.gz"
-PATCH_URI="0.12.5-cygwin.patch"
